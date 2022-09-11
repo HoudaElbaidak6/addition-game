@@ -11,6 +11,7 @@ let output = document.getElementById("output");
 let gameArea = document.getElementById("addition");
 let restartBtn = document.getElementById("btn");
 let audios=document.querySelectorAll("audio")
+let icons=document.querySelectorAll("i")
 
 function mainSettings() {
   entiera = randomNumber(1, 100);
@@ -61,10 +62,13 @@ function additionRandom() {
   } else {
     if (resUser == res) {
       output.textContent = ` Good Job !! You got it right `;
+      icons[0].style.display="block"
+
       audios[0].play()
       gameOver();
     } else {
       output.textContent = "You got it wrong";
+      icons[1].style.display="block"
       audios[1].play()
       gameOver();
     }
