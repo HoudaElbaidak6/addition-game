@@ -13,7 +13,17 @@ body {
 h1 {
   font-size: 1.3em;
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
+}
+#levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 1.8em;
+  color: rgb(185, 147, 147);
+  font-weight: bolder;
 }
 #titles {
   display: flex;
@@ -99,8 +109,8 @@ input {
   font-size: 1.6em;
 }
 
-span{
-    color: rgb(211, 18, 18);
-    font-weight: bold;
-    font-size: 1.3em;
+span {
+  color: rgb(211, 18, 18);
+  font-weight: bold;
+  font-size: 1.3em;
 }
