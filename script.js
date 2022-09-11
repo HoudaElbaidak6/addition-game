@@ -21,7 +21,7 @@ function mainSettings() {
   entierb = randomNumber(1, 100);
   random2.textContent = `${entierb}`;
   console.log(entierb);
-  res = entiera + entierb;
+  somme = entiera + entierb;
   console.log(res);
   outputBad.style.display = "none";
   outputGood.style.display = "none";
