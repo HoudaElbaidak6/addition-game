@@ -103,15 +103,25 @@ input {
   transition: 0.3s ease;
 }
 
-#output {
+#outputbad,#outputgood {
   font-family: monospace;
   font-weight: 600;
   font-size: 1.6em;
+  color: white;
 }
+
 
 span {
   color: rgb(211, 18, 18);
   font-weight: bold;
   font-size: 1.3em;
 }
+ /* #outputgood,
+#outputbad {
+  display: none;
+}  */
 
+i{
+  font-size: 1.3em;
+  
+}

@@ -7,7 +7,8 @@ let button = document.querySelector("button");
 let input = document.querySelector("input");
 let random1 = document.getElementById("random1");
 let random2 = document.getElementById("random2");
-let output = document.getElementById("output");
+let outputGood = document.getElementById("outputgood");
+let outputBad = document.getElementById("outputbad");
 let gameArea = document.getElementById("addition");
 let restartBtn = document.getElementById("btn");
 let audios = document.querySelectorAll("audio");
@@ -22,7 +23,8 @@ function mainSettings() {
   console.log(entierb);
   res = entiera + entierb;
   console.log(res);
-  output.textContent = "";
+  outputBad.style.display = "none";
+  outputGood.style.display = "none";
 }
 
 function gameOver() {
@@ -61,14 +63,11 @@ function additionRandom() {
     alert("Enter the addition");
   } else {
     if (resUser == res) {
-      output.textContent = ` Good Job !! You got it right  `;
-      output.style.display = "block";
-
+      outputGood.style.display = "block";
       audios[0].play();
       gameOver();
     } else {
-      output.textContent = "You got it wrong";
-
+      outputBad.style.display = "block";
       audios[1].play();
       gameOver();
     }
