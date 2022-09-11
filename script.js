@@ -12,10 +12,10 @@ let gameArea = document.getElementById("addition");
 let restartBtn = document.getElementById("btn");
 
 function mainSettings() {
-  entiera = randomNumber(1, 10);
+  entiera = randomNumber(1, 100);
   console.log(entiera);
   random1.textContent = `${entiera}`;
-  entierb = randomNumber(1, 10);
+  entierb = randomNumber(1, 100);
   random2.textContent = `${entierb}`;
   console.log(entierb);
   res = entiera + entierb;
