@@ -114,3 +114,8 @@ span {
   font-weight: bold;
   font-size: 1.3em;
 }
+.fa-regular .fa-face-laugh-beam {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
